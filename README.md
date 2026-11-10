@@ -3,7 +3,7 @@
 一個區域一頁的東京自由行指南，為 2027-01-07～01-13 的旅行而做。
 每個景點都附營業時間、公休日、價格（自動換算台幣）與資料來源，首頁的行程總覽會標出排到公休日的景點。
 
-- 網站：https://YOUR-GITHUB-NAME.github.io/tokyo-guide/
+- 網站：https://changshinyu.github.io/tokyo-guide/
 - 專案規則（給 AI 看的員工手冊）：[`CLAUDE.md`](./CLAUDE.md)
 
 ## 這個專案怎麼運作
