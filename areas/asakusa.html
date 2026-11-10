@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>淺草｜旅遊指南</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-area="asakusa">
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="../index.html">旅遊指南</a>
+      <nav><a href="../index.html#itinerary">行程</a><a href="../index.html#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="area-hero">
+    <div class="container">
+      <p class="area-kicker">G18</p>
+      <h1>淺草</h1>
+      <p class="area-summary">住宿的大本營。東京最古老的寺廟就在走路範圍內，隅田川對岸還有一間英文二手書店。</p>
+      <p class="area-days" id="area-days"></p>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <nav class="toc" id="toc"></nav>
+
+    <section id="overview">
+      <h2>區域速覽</h2>
+      <p>飯店在淺草西南邊的田原町，走路就能到雷門。白天觀光客很多，但早上和傍晚安靜很多，很適合抵達當天先熟悉環境。過了隅田川就是晴空塔那一側，Infinity Books 就在橋邊。</p>
+      <ul class="quick-facts">
+        <li><strong>適合：</strong>第一天抵達後散步、每天早晚順路逛</li>
+        <li><strong>建議時段：</strong>淺草寺清晨或傍晚；Infinity Books 下午</li>
+        <li><strong>待多久：</strong>半天就夠，可以分好幾次來</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>怎麼去</h2>
+      <ol class="route">
+        <li>從飯店往東、朝隅田川的方向走，約 10 分鐘到雷門（第一次走建議開地圖導航）。</li>
+        <li>穿過雷門、走完約 250 公尺的仲見世通，就是淺草寺本堂。</li>
+        <li>要去 Infinity Books：書店在隅田川對岸的墨田區吾妻橋一丁目，從地鐵淺草站走幾分鐘（銀座線用 4 號出口）。</li>
+      </ol>
+    </section>
+
+    <section id="spots">
+      <h2>景點</h2>
+
+      <div class="spot" data-spot="sensoji">
+        <p>東京最古老的寺廟，第一次來東京一定要走一次雷門到本堂這段路。中間的仲見世通全是小吃和伴手禮店，邊走邊吃也可以，但記得在店門口吃完再走。</p>
+        <p>本堂傍晚就關門，但寺院境內整晚都能進去，晚上點燈之後人少很多，拍照比白天漂亮。第一天抵達後來這裡散步剛剛好。</p>
+      </div>
+
+      <div class="spot" data-spot="infinity-books">
+        <p>東京少數還在營業的英文二手書店，由英國老闆經營，店裡從文學經典到絕版書都有，也收購二手英文書。很適合挖找沒有中譯本、在台灣不好買的英文小說。</p>
+        <p>店裡兼做活動空間，有時晚上有音樂或讀書會。營業時間在不同網站寫得不一樣，出發前務必先查官網或 Instagram。</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>吃什麼</h2>
+      <ul class="food-list">
+        <li><strong>仲見世通小吃</strong>人形燒、炸饅頭、仙貝，邊走邊買，一樣 <span class="yen" data-yen="300" data-estimate></span>。</li>
+        <li><strong>天婦羅、蕎麥麵</strong>淺草是老店集中的地方，午餐一份 <span class="yen" data-yen="1500" data-estimate></span> 起。</li>
+        <li><strong>飯店旁超商</strong>晚上回來太累，買個便當和熱飲就好。</li>
+      </ul>
+    </section>
+
+    <section id="rainy">
+      <h2>下雨／太冷怎麼辦</h2>
+      <div class="callout note">
+        <p class="callout-title">備案</p>
+        <p>淺草寺主要是戶外，下雨就縮短停留；Infinity Books 整間都在室內，可以待久一點。真的很冷，搭銀座線兩站去上野的博物館。</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>小提醒</h2>
+      <div class="callout tip">
+        <p class="callout-title">這趟要注意</p>
+        <ul>
+          <li>Infinity Books 週一公休，1/11 去不了；行程排在 1/10（週日），週日營業時間較短，下午早點到。</li>
+          <li>1 月傍晚 5 點左右天就黑了、氣溫接近 0°C，晚上散步要穿暖。</li>
+          <li>買了書記得留意回程行李重量，舊精裝書很重。</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="area-nav" id="area-nav"></nav>
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="../data/trip.js"></script>
+  <script src="../data/areas.js"></script>
+  <script src="../data/spots.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

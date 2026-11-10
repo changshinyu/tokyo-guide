@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>上野｜旅遊指南</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-area="ueno">
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="../index.html">旅遊指南</a>
+      <nav><a href="../index.html#itinerary">行程</a><a href="../index.html#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="area-hero">
+    <div class="container">
+      <p class="area-kicker">G16</p>
+      <h1>上野</h1>
+      <p class="area-summary">離飯店只有兩站的博物館區。日本歷史最久的博物館，適合排在天氣冷或下雨的日子。</p>
+      <p class="area-days" id="area-days"></p>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <nav class="toc" id="toc"></nav>
+
+    <section id="overview">
+      <h2>區域速覽</h2>
+      <p>上野恩賜公園裡集中了好幾間博物館和美術館，最大的是東京國立博物館，收藏日本與亞洲的美術、考古文物。從飯店過去只要兩站，很適合當作天氣不好時的室內行程。</p>
+      <ul class="quick-facts">
+        <li><strong>適合：</strong>喜歡歷史、日本美術的人；下雨或太冷的日子</li>
+        <li><strong>建議時段：</strong>早上開館就進去，或週五、六晚上</li>
+        <li><strong>待多久：</strong>博物館 2～3 小時，加上公園散步半天</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>怎麼去</h2>
+      <ol class="route">
+        <li>飯店走到銀座線田原町站，往澀谷方向搭 2 站到上野站。</li>
+        <li>從 7 號出口出站，穿過上野公園往北走，約 15 分鐘到博物館。</li>
+        <li>也可以搭 JR 到上野站公園口，走路約 10 分鐘。</li>
+      </ol>
+    </section>
+
+    <section id="spots">
+      <h2>景點</h2>
+
+      <div class="spot" data-spot="tokyo-national-museum">
+        <p>日本歷史最久的博物館，常設展（總合文化展）隨時展出約三千件文物，包含國寶和重要文化財。先從本館開始逛，看日本美術從古到今的主要作品，再依興趣去其他展館。</p>
+        <p>大學生票價較便宜，記得帶學生證到售票口問能不能適用。週五、六開到晚上，時間比較充裕。</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>吃什麼</h2>
+      <ul class="food-list">
+        <li><strong>阿美橫町一帶</strong>上野站旁的商店街，小吃、海鮮丼選擇很多，一餐 <span class="yen" data-yen="1200" data-estimate></span>。</li>
+        <li><strong>博物館內餐廳</strong>不想出去吹風就在館內吃，價格比外面高一些。</li>
+      </ul>
+    </section>
+
+    <section id="rainy">
+      <h2>下雨／太冷怎麼辦</h2>
+      <div class="callout note">
+        <p class="callout-title">備案</p>
+        <p>這一區本身就是雨天備案：博物館看完，公園裡還有其他美術館可以接著逛，不用在外面走太久。</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>小提醒</h2>
+      <div class="callout tip">
+        <p class="callout-title">這趟要注意</p>
+        <ul>
+          <li>博物館週一休館，但 1/11 是國定假日所以照常開，改成 1/12（週二）休館；不要把它排在 1/12。</li>
+          <li>行程排在 1/9（週六），晚上開比較久，可以不用趕。</li>
+          <li>特別展另外收費，票價以展覽官網為準。</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="area-nav" id="area-nav"></nav>
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="../data/trip.js"></script>
+  <script src="../data/areas.js"></script>
+  <script src="../data/spots.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

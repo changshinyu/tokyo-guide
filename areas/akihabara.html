@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>秋葉原｜旅遊指南</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-area="akihabara">
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="../index.html">旅遊指南</a>
+      <nav><a href="../index.html#itinerary">行程</a><a href="../index.html#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="area-hero">
+    <div class="container">
+      <p class="area-kicker">JY03</p>
+      <h1>秋葉原</h1>
+      <p class="area-summary">電器、動漫和次文化的大本營。車站旁有一整棟的「趣味人」專門書店。</p>
+      <p class="area-days" id="area-days"></p>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <nav class="toc" id="toc"></nav>
+
+    <section id="overview">
+      <h2>區域速覽</h2>
+      <p>秋葉原（秋葉原）是電器街，也是動漫、遊戲和偶像文化的聖地。對愛書的人來說，車站東側的書泉 Book Tower 是一整棟的專門書店，鐵道、電腦、科幻、輕小說到美國漫畫，分類細到讓人逛不完。</p>
+      <ul class="quick-facts">
+        <li><strong>適合：</strong>喜歡動漫、電器，或想看日本次文化書籍的人</li>
+        <li><strong>建議時段：</strong>中午之後（很多店 11 點才開）</li>
+        <li><strong>待多久：</strong>半天，可以和上野排同一天</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>怎麼去</h2>
+      <ol class="route">
+        <li>飯店走到銀座線田原町站，往澀谷方向搭 2 站到上野站。</li>
+        <li>在上野站轉 JR 山手線或京濱東北線，往東京方向搭到秋葉原站（約 2 站）。</li>
+        <li>書泉 Book Tower 在車站東側的昭和通口，出站步行 1 分。全程約 20 分鐘（估）。</li>
+      </ol>
+    </section>
+
+    <section id="spots">
+      <h2>景點</h2>
+
+      <div class="spot" data-spot="shosen-book-tower">
+        <p>1948 年創業的書泉集團旗艦店，主打「趣味人專用」：每層樓一個主題，鐵道、偶像、格鬥技、軍事、電腦、科幻小說都有整層的書。六樓的美國漫畫區也很受歡迎。</p>
+        <p>就算不懂日文，看各樓層的主題陳列也很有趣，很能感受日本「宅」文化的深度。書泉在神保町也有分店，和古書街可以順路一起逛。</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>吃什麼</h2>
+      <ul class="food-list">
+        <li><strong>拉麵、定食</strong>電器街附近小店很多，快速吃一餐 <span class="yen" data-yen="1000" data-estimate></span>。</li>
+        <li><strong>車站周邊連鎖店</strong>咖啡、漢堡、牛丼都有，逛累了隨時可以坐下來。</li>
+      </ul>
+    </section>
+
+    <section id="rainy">
+      <h2>下雨／太冷怎麼辦</h2>
+      <div class="callout note">
+        <p class="callout-title">備案</p>
+        <p>秋葉原的大型電器行和書店都是整棟室內，下雨照樣可以逛；車站附近的大型商場也能躲雨。</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>小提醒</h2>
+      <div class="callout tip">
+        <p class="callout-title">這趟要注意</p>
+        <ul>
+          <li>書泉 Book Tower 只有元旦休息，1/11 國定假日也有開，可以排在北澤書店休息的那天。</li>
+          <li>國定假日秋葉原人會很多，想好好挑書就早點進店。</li>
+          <li>買電器前先確認電壓與插頭規格，以及能不能退稅。</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="area-nav" id="area-nav"></nav>
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="../data/trip.js"></script>
+  <script src="../data/areas.js"></script>
+  <script src="../data/spots.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

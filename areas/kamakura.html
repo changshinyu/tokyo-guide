@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>鎌倉｜旅遊指南</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-area="kamakura">
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="../index.html">旅遊指南</a>
+      <nav><a href="../index.html#itinerary">行程</a><a href="../index.html#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="area-hero">
+    <div class="container">
+      <p class="area-kicker">JO07</p>
+      <h1>鎌倉</h1>
+      <p class="area-summary">從東京搭電車約一小時的古都，大佛和八幡宮，適合安排一整天的小旅行。</p>
+      <p class="area-days" id="area-days"></p>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <nav class="toc" id="toc"></nav>
+
+    <section id="overview">
+      <h2>區域速覽</h2>
+      <p>鎌倉（鎌倉）在神奈川縣，是鎌倉幕府的所在地，寺廟神社很多，又靠海。最經典的兩個點是鶴岡八幡宮和長谷的大佛，冬天大佛下午很早就停止入場，建議先搭江之電去大佛，回鎌倉站再去八幡宮。冬天的大佛前人比較少，是好時機。</p>
+      <ul class="quick-facts">
+        <li><strong>適合：</strong>想離開都市、看寺廟和海的一日遊</li>
+        <li><strong>建議時段：</strong>早上出發，傍晚回東京（冬天天黑得早）</li>
+        <li><strong>待多久：</strong>一整天，交通來回就要 3 小時左右</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>怎麼去</h2>
+      <ol class="route">
+        <li>飯店走到銀座線田原町站，往澀谷方向一路搭到新橋站（不用轉車）。</li>
+        <li>在新橋站轉 JR 橫須賀線（往逗子／久里浜方向），搭到鎌倉站，約 1 小時。</li>
+        <li>去鶴岡八幡宮：從鎌倉站東口步行約 10 分，可以走小町通。</li>
+        <li>去大佛：在鎌倉站轉江之電到長谷站，再步行約 7 分。</li>
+      </ol>
+    </section>
+
+    <section id="spots">
+      <h2>景點</h2>
+
+      <div class="spot" data-spot="tsurugaoka-hachimangu">
+        <p>鎌倉的中心，源賴朝把它遷到現在的位置，整座城市就是以它為中心規劃的。爬上大石階到本宮，可以往回看到一路延伸到海邊的參道。</p>
+        <p>從車站過來會經過小町通，一路都是小吃和伴手禮店，建議早上先參拜、回程再慢慢逛。</p>
+      </div>
+
+      <div class="spot" data-spot="kotoku-in">
+        <p>高約 11 公尺的露天青銅大佛，是鎌倉唯一的國寶佛像。原本有大殿罩著，後來被風災地震毀掉，才變成現在坐在露天的樣子。</p>
+        <p>另外付一點錢就能進到大佛肚子裡面看內部構造（大佛胎內），開放時間比大佛更早結束，想進去就早點到。</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>吃什麼</h2>
+      <ul class="food-list">
+        <li><strong>小町通小吃</strong>仙貝、糰子、可樂餅，邊走邊吃，一樣 <span class="yen" data-yen="400" data-estimate></span>。</li>
+        <li><strong>魩仔魚丼（しらす丼）</strong>鎌倉的名物，一碗 <span class="yen" data-yen="1500" data-estimate></span>；冬天通常吃不到生的，多半是熟的釜揚魩仔魚。</li>
+      </ul>
+    </section>
+
+    <section id="rainy">
+      <h2>下雨／太冷怎麼辦</h2>
+      <div class="callout note">
+        <p class="callout-title">備案</p>
+        <p>鎌倉幾乎都是戶外景點，下大雨就改天去，換成池袋或秋葉原這種室內行程。小雨可以只去鶴岡八幡宮和小町通，縮短行程。</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>小提醒</h2>
+      <div class="callout tip">
+        <p class="callout-title">這趟要注意</p>
+        <ul>
+          <li>1/11 是國定假日，鎌倉會很擠；建議排在平日（例如 1/12），而且當天東京國立博物館也正好休館。</li>
+          <li>大佛冬天下午很早就停止入場，先去大佛、再回鎌倉站逛八幡宮，順序比較不會趕。</li>
+          <li>交通費要另外算：東京到鎌倉不在地鐵範圍內，記得用 IC 卡刷 JR。</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="area-nav" id="area-nav"></nav>
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="../data/trip.js"></script>
+  <script src="../data/areas.js"></script>
+  <script src="../data/spots.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

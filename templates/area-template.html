@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+  區域頁模板：新增區域時複製到 areas/<區域id>.html
+  1. 把 AREA-ID、NN、【…】全部換掉，並刪除這段註解
+  2. 六個 <section> 的 id 與順序不可更改（CLAUDE.md 第 7 節）
+  3. 景點事實寫在 data/spots.js，這裡只寫推薦理由
+  4. 金額只能用 <span class="yen" data-yen="數字"></span>
+  5. 不要寫 inline style、<style> 或其他 <script>
+-->
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>【區域名】｜旅遊指南</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-area="AREA-ID">
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="../index.html">旅遊指南</a>
+      <nav><a href="../index.html#itinerary">行程</a><a href="../index.html#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="area-hero">
+    <div class="container">
+      <p class="area-kicker">【最近車站的站號，與 areas.js 的 line.code 相同，例如 G18】</p>
+      <h1>【區域中文名，與 areas.js 的 name 相同】</h1>
+      <p class="area-summary">【與 areas.js 的 summary 相同】</p>
+      <p class="area-days" id="area-days"></p>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <nav class="toc" id="toc"></nav>
+
+    <section id="overview">
+      <h2>區域速覽</h2>
+      <p>【2～4 句介紹這一區的個性】</p>
+      <ul class="quick-facts">
+        <li><strong>適合：</strong>【…】</li>
+        <li><strong>建議時段：</strong>【…】</li>
+        <li><strong>待多久：</strong>【…】</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>怎麼去</h2>
+      <ol class="route">
+        <li>【從飯店出發的第一步】</li>
+        <li>【…】</li>
+      </ol>
+    </section>
+
+    <section id="spots">
+      <h2>景點</h2>
+      <div class="spot" data-spot="spot-id">
+        <p>【推薦理由：為什麼值得去、怎麼逛】</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>吃什麼</h2>
+      <ul class="food-list">
+        <li><strong>【類型】</strong>【說明】，預算 <span class="yen" data-yen="1000" data-estimate></span></li>
+        <li><strong>【類型】</strong>【說明】</li>
+      </ul>
+    </section>
+
+    <section id="rainy">
+      <h2>下雨／太冷怎麼辦</h2>
+      <div class="callout note">
+        <p class="callout-title">備案</p>
+        <p>【室內的替代方案】</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>小提醒</h2>
+      <div class="callout tip">
+        <p class="callout-title">這趟要注意</p>
+        <ul>
+          <li>【和行程日期有關的提醒：公休、假日】</li>
+          <li>【…】</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="area-nav" id="area-nav"></nav>
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="../data/trip.js"></script>
+  <script src="../data/areas.js"></script>
+  <script src="../data/spots.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

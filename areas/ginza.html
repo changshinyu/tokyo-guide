@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>銀座｜旅遊指南</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body data-area="ginza">
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="../index.html">旅遊指南</a>
+      <nav><a href="../index.html#itinerary">行程</a><a href="../index.html#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="area-hero">
+    <div class="container">
+      <p class="area-kicker">G09</p>
+      <h1>銀座</h1>
+      <p class="area-summary">一條銀座線直達。全世界最大的 UNIQLO，和以藝術書聞名的蔦屋書店。</p>
+      <p class="area-days" id="area-days"></p>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <nav class="toc" id="toc"></nav>
+
+    <section id="overview">
+      <h2>區域速覽</h2>
+      <p>銀座（銀座）是東京的高級購物區，從飯店搭一條銀座線就到，不用轉車。對這趟來說，重點是全世界最大的 UNIQLO，和 GINZA SIX 裡以藝術書聞名的蔦屋書店。</p>
+      <ul class="quick-facts">
+        <li><strong>適合：</strong>想買 UNIQLO 限定款、喜歡設計和藝術書的人</li>
+        <li><strong>建議時段：</strong>下午到晚上（店家大多 11 點左右開）</li>
+        <li><strong>待多久：</strong>半天</li>
+      </ul>
+    </section>
+
+    <section id="access">
+      <h2>怎麼去</h2>
+      <ol class="route">
+        <li>飯店走到銀座線田原町站，往澀谷方向一路搭到銀座站，不用轉車。</li>
+        <li>UNIQLO 從 A2 出口步行約 4 分；蔦屋書店在 GINZA SIX 6 樓，從 A3 出口約 2 分。全程約 15 分鐘（估）。</li>
+      </ol>
+    </section>
+
+    <section id="spots">
+      <h2>景點</h2>
+
+      <div class="spot" data-spot="uniqlo-ginza">
+        <p>一到十二樓整棟都是 UNIQLO，是全世界規模最大的旗艦店，品項最齊。十一樓是 UT 聯名 T 恤專區，還有一般門市沒有的尺寸。</p>
+        <p>五樓可以在衣服上加刺繡或貼布，做一件只屬於自己的紀念品。一樓有會說多國語言的店員。</p>
+      </div>
+
+      <div class="spot" data-spot="ginza-tsutaya">
+        <p>以「藝術與日本文化」為主題的書店，藝術書、攝影集、設計書特別多，店裡還有畫廊和咖啡。</p>
+        <p>和神保町的古書店是完全不同的風格，想看日本設計書或買精裝畫冊可以來這裡。</p>
+      </div>
+    </section>
+
+    <section id="food">
+      <h2>吃什麼</h2>
+      <ul class="food-list">
+        <li><strong>百貨地下美食街</strong>GINZA SIX、銀座三越的地下樓層有便當和甜點，買回飯店吃很方便。</li>
+        <li><strong>洋食老店</strong>銀座有不少歷史很久的洋食店，蛋包飯、炸豬排一份 <span class="yen" data-yen="2000" data-estimate></span>。</li>
+      </ul>
+    </section>
+
+    <section id="rainy">
+      <h2>下雨／太冷怎麼辦</h2>
+      <div class="callout note">
+        <p class="callout-title">備案</p>
+        <p>UNIQLO 和 GINZA SIX 都是整棟室內，銀座站地下通道也連接好幾間百貨，下雨很適合來。</p>
+      </div>
+    </section>
+
+    <section id="tips">
+      <h2>小提醒</h2>
+      <div class="callout tip">
+        <p class="callout-title">這趟要注意</p>
+        <ul>
+        <li>銀座線直達、約 15 分鐘，晚上其他行程結束後也可以順路來。</li>
+        <li>UNIQLO 只有元旦休息，任何一天都能排。</li>
+        <li>蔦屋書店官方與商場的關門時間不同，想晚點去先查官網。</li>
+        </ul>
+      </div>
+    </section>
+
+    <nav class="area-nav" id="area-nav"></nav>
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="../data/trip.js"></script>
+  <script src="../data/areas.js"></script>
+  <script src="../data/spots.js"></script>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
