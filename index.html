@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>旅遊指南</title>
+  <meta name="description" content="一個區域一頁的自由行指南。每個景點都附營業時間、公休日、價格與資料來源。">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-bar">
+    <div class="container">
+      <a class="site-logo" href="index.html">旅遊指南</a>
+      <nav><a href="#itinerary">行程</a><a href="#plan">試排</a><a href="#search">找景點</a><a href="#areas">區域</a></nav>
+    </div>
+  </header>
+
+  <header class="home-hero">
+    <div class="container">
+      <p class="kicker" id="trip-kicker"></p>
+      <h1 id="trip-title"></h1>
+      <dl class="trip-meta">
+        <div><dt>日期</dt><dd><span class="num" id="trip-dates"></span></dd></div>
+        <div><dt>出發倒數</dt><dd><span class="num" id="countdown"></span></dd></div>
+        <div><dt>住宿</dt><dd id="hotel-name"></dd></div>
+      </dl>
+      <ol class="route-strip" id="route-strip" aria-label="每天去哪一區"></ol>
+    </div>
+  </header>
+
+  <main class="container sheet">
+
+    <section id="itinerary">
+      <h2>每日行程（草案）</h2>
+      <p>每一站是一天，顏色是當天要搭的路線。點標題看那一區；排到店家公休日的景點會標上「⚠ 公休」。</p>
+      <ol class="day-list" id="day-list"></ol>
+    </section>
+
+    <section id="plan">
+      <h2>試排行程</h2>
+      <p>想換個排法？每天可以自己加減景點，排到公休日會立刻警告。這裡的變更只存在你的瀏覽器；排好後按「複製成 trip.js 格式」，貼給 AI 或貼進 <code>data/trip.js</code> 就會正式更新。</p>
+      <div class="planner" id="planner"></div>
+      <div class="planner-foot">
+        <p class="planner-total" id="planner-total" aria-live="polite"></p>
+        <div class="planner-actions">
+          <button type="button" class="btn" id="planner-reset">重設為原行程</button>
+          <button type="button" class="btn primary" id="planner-copy">複製成 trip.js 格式</button>
+        </div>
+        <p class="planner-msg" id="planner-msg" aria-live="polite"></p>
+        <textarea class="planner-out" id="planner-out" rows="8" readonly hidden aria-label="trip.js 的 days 資料"></textarea>
+      </div>
+    </section>
+
+    <section id="search">
+      <h2>找景點</h2>
+      <form class="search" id="spot-search" role="search">
+        <div class="field grow">
+          <label for="q">關鍵字</label>
+          <input id="q" type="search" placeholder="店名、區域或類型，例如：書店、Animate、鎌倉" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="q-day">哪一天去</label>
+          <select id="q-day"><option value="">不限日期</option></select>
+        </div>
+      </form>
+      <div class="chip-row" id="q-chips" aria-label="依類型篩選"></div>
+      <p class="search-count" id="q-count" aria-live="polite"></p>
+      <ul class="result-list" id="q-results"></ul>
+    </section>
+
+    <section id="areas">
+      <h2>區域（共 <span id="area-count">0</span> 區）</h2>
+      <p>從飯店出發的路線圖：每條線是去那一區要搭的路線，點站名看怎麼去、有哪些景點。</p>
+      <div class="spider" id="spider-map"></div>
+      <div class="spider-info" id="map-info" aria-live="polite"></div>
+      <ol class="area-list" id="area-list"></ol>
+    </section>
+
+    <section id="about">
+      <h2>關於這個專案</h2>
+      <p>這是「生成式 AI」課程的作業。重點不是做一個網頁，而是寫一份給 AI 看的「員工手冊」<code>CLAUDE.md</code>，規定網站的目的、風格、檔案結構、每一區的固定格式，以及「營業時間和價格一定要有來源」這類資料規則。</p>
+      <p>之後只要對 AI 說「請先讀 CLAUDE.md，新增一個區域：秋葉原」，它就會照同一套規則產生新頁面、補上景點資料，並用 <code>tools/check.py</code> 自我檢查，包括有沒有把行程排在店家公休日。這個網站的秋葉原、池袋、鎌倉和購物景點，就是建好規則之後照這個流程加上去的。</p>
+      <p>網站名稱、城市、日期都集中在 <code>data/trip.js</code>，下一趟去別的城市，只要照 CLAUDE.md 的「開始一趟新的旅行」換掉設定，同一套框架就能重新使用。</p>
+      <div class="callout note">
+        <p class="callout-title">專案原始碼</p>
+        <p><a href="https://github.com/YOUR-GITHUB-NAME/tokyo-guide">GitHub Repository</a>・<a href="https://github.com/YOUR-GITHUB-NAME/tokyo-guide/blob/main/CLAUDE.md">CLAUDE.md</a></p>
+      </div>
+    </section>
+
+    <p class="rate-note" id="rate-note"></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><span data-site-name>旅遊指南</span>・依照 CLAUDE.md 的規則與 AI 協作維護</div>
+  </footer>
+
+  <script src="data/trip.js"></script>
+  <script src="data/areas.js"></script>
+  <script src="data/spots.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
